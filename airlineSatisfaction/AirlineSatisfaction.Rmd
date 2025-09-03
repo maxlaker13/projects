@@ -1,0 +1,36 @@
+---
+title: "onlinefoods"
+author: "Max Lake"
+date: "2024-12-08"
+output: html_document
+---
+
+```{r setup, include=FALSE} 
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+```
+
+```{r}
+library(tidyverse)
+library(readr)
+library(dplyr)
+```
+
+```{r}
+data = read_csv("train.csv")
+```
+
+```{r}
+data <- read_csv("train.csv")
+
+
+```
+
+```{r}
+# Correct rating columns
+rating_columns <- c("Flight Distance", "Inflight wifi service", "Departure/Arrival time", 
+                    "convenient Ease of Online booking", "Gate location", "Food and drink", 
+                    "Online boarding", "Seat comfort", "Inflight entertainment", "On-board service", 
+                    "Leg room service", "Baggage handling", "Checkin service", "Inflight service", 
+                    "Cleanliness")
+```
+
